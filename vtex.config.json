@@ -1,0 +1,34 @@
+{
+    "publish": {
+        "templates": [],
+        "sub_templates": [],
+        "shelf": [],
+        "images": [],
+        "pdf": [],
+        "xml": [],
+        "js": [],
+        "css": [],
+        "files": [],
+        "files_templates": []
+    },
+    "import": {
+        "templates": {
+            "prefix": ""
+        }
+    },
+    "make_uploads": {
+        "templates": true,
+        "sub_templates": true,
+        "shelf": true,
+        "images": false,
+        "pdf": false,
+        "xml": false,
+        "js": true,
+        "css": true,
+        "files": true,
+        "files_templates": true
+    },
+    "checkoutRulesEnv": {
+        "corebiz": "default"
+    }
+}

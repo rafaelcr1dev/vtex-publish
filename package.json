@@ -1,0 +1,50 @@
+{
+  "name": "vtexpublish",
+  "version": "1.0.0",
+  "description": "Publicador de arquivos da VTEX",
+  "engines": {
+    "node": ">=6.9.1"
+  },
+  "main": "gulp.js",
+  "scripts": {
+    "vtex-publish": "npm run htmllint && cross-env TYPE=publish node index.js",
+    "vtex-import": "cross-env TYPE=import node index.js",
+    "vtex-watch": "npm run htmllint && cross-env TYPE=watch node index.js",
+    "test": "cross-env NODE_ENV=test && jest --env=node --runInBand",
+    "test:tdd": "npm run test -- --watch",
+    "eslint:watch": "gulp jslint:watch --gulpfile config/gulp.js",
+    "htmllint:watch": "gulp htmllint:watch --gulpfile config/gulp.js",
+    "eslint": "gulp jslint --gulpfile config/gulp.js",
+    "htmllint": "gulp htmllint --gulpfile config/gulp.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/savanajs/vtexpublish.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/savanajs/vtexpublish/issues"
+  },
+  "homepage": "https://github.com/savanajs/vtexpublish#readme",
+  "devDependencies": {
+    "chalk": "^2.4.2",
+    "cross-env": "^5.2.1",
+    "crypto": "^1.0.1",
+    "fs": "0.0.1-security",
+    "gulp": "^4.0.0",
+    "gulp-eslint": "^5.0.0",
+    "gulp-html-linter": "^1.0.0",
+    "gulp-util": "^3.0.8",
+    "jest": "^24.5.0",
+    "ora": "^3.4.0",
+    "readline-sync": "^1.4.9",
+    "request": "^2.88.0",
+    "slash": "^2.0.0"
+  },
+  "dependencies": {
+    "apisauce": "^1.0.2",
+    "cheerio": "^1.0.0-rc.3",
+    "image-downloader": "^3.5.0"
+  }
+}
